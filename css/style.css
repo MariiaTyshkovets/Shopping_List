@@ -42,6 +42,7 @@ h1 {
     border: 3px solid #88839E;
     border-right: none;
     border-left: none;
+    transition: all .1s ease-in;
 }
 
 .second-block, .fourth-block, .sixth-block {
