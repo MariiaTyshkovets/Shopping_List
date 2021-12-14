@@ -11,12 +11,14 @@ body {
     color: #FF8984;
     font-size: 16px;
 }
+
 h1 {
     font-weight: 700;
     font-size: 24px;
     padding-top: 19px;
     padding-bottom: 7px;
 }
+
 .container {
     background: #3B3F45;
     height: 100vh;
@@ -27,7 +29,7 @@ h1 {
 
 .block {
     width: 534px;
-    height: 45px;
+    height: 39px;
     color: #FFFFFF;
 }
 
@@ -37,10 +39,16 @@ h1 {
 
 .main-block {
     background-color: #88839E;
+    border: 3px solid #88839E;
+    border-right: none;
+    border-left: none;
 }
 
 .second-block, .fourth-block, .sixth-block {
     background-color: #7A7593;
+    border: 3px solid #7A7593;
+    border-right: none;
+    border-left: none;
 }
 
 .small-text {
@@ -74,14 +82,14 @@ h1 {
 	height: 19px;
 	background: #fff;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 12px;
 }
 
 label {
     position: absolute;
     margin-left: 40px;
-    margin-top: 12px;
+    margin-top: 9px;
     cursor: pointer;
 }
 
@@ -93,9 +101,18 @@ label {
     background-position: center center;
     background-size: 70%;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 13px;
     text-decoration: line-through;
+}
+
+.custom-checkbox:checked~label span {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+.custom-checkbox:checked~label small {
+    color: #9B96AC;
 }
 
 .footer {
